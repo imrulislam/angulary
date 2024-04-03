@@ -1,0 +1,42 @@
+<section class="section-padding" fxLayoutAlign="center center">
+    <div class="container">
+        <div class="section-title">
+            <h2>Choose a Demo</h2>
+            <p>Lazy loaded module with well documented code base. Responsive layout with easy customizable
+                components.</p>
+        </div>
+        <div fxLayout="row wrap" fxLayoutGap.gt-sm="32px" ngClass.gt-sm="mr-m-32" fxLayoutAlign="center center">
+            <div ngClass.sm="mb-16" ngClass.xs="mb-16" fxFlex.lt-sm="0 0 calc(100%)" fxFlex.sm="0 0 calc(100%)" fxFlex.gt-sm="0 0 calc(33.33%-32px)">
+                <mat-card class="p-0 m-0 single-demo cursor-pointer" (click)="goToMainDesign('minimal-one')">
+                    <mat-card-header class="p-16">
+                        <mat-card-title class="m-0">Angulary 1</mat-card-title>
+                    </mat-card-header>
+                    <img mat-card-image class="m-0" src="assets/images/minimal-one.png"
+                        alt="Photo of Version One">
+                </mat-card>
+            </div>
+            <div ngClass.sm="mb-16" ngClass.xs="mb-16" fxFlex.lt-sm="0 0 calc(100%)" fxFlex.sm="0 0 calc(100%)" fxFlex.gt-sm="0 0 calc(33.33%-32px)">
+                <mat-card class="p-0 m-0 single-demo cursor-pointer" (click)="goToMainDesign('minimal-two')">
+                    <mat-card-header class="p-16">
+                        <mat-card-title class="m-0">Angulary 2</mat-card-title>
+                    </mat-card-header>
+                    <img mat-card-image class="m-0" src="assets/images/minimal-two.png"
+                        alt="Photo of Version Two">
+                </mat-card>
+            </div>
+            <div ngClass.sm="mb-16" ngClass.xs="mb-16" fxFlex.lt-sm="0 0 calc(100%)" fxFlex.sm="0 0 calc(100%)" fxFlex.gt-sm="0 0 calc(33.33%-32px)">
+                <mat-card class="p-0 m-0 single-demo cursor-pointer" (click)="goToMainDesign('minimal-three')">
+                    <mat-card-header class="p-16">
+                        <mat-card-title class="m-0">Angulary 3</mat-card-title>
+                    </mat-card-header>
+                    <img mat-card-image class="m-0" src="assets/images/minimal-three.png"
+                        alt="Photo of Version Three">
+                </mat-card>
+            </div>
+        </div>
+
+        <div fxLayoutAlign="center center" class="mt-50">
+            <button mat-stroked-button color="primary" routerLink="/document">Documentation</button>
+        </div>
+    </div>
+</section>

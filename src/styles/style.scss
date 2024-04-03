@@ -1,0 +1,179 @@
+// Mixin for pre generated class
+@import "./mixin.scss";
+@import "./common.scss";
+@import "./variables.scss";
+@import "./responsive.scss";
+@import "./theme.scss";
+
+$custom-typography: mat-typography-config($font-family: '"Montserrat", sans-serif;');
+@include mat-core($custom-typography);
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    color: $text-color;
+}
+
+.white-text {
+    color: $white;
+}
+
+.primary-text {
+    color: $primary-text;
+}
+
+.secondary-text {
+    color: $secondary-text;
+}
+
+.hint-text {
+    color: $secondary-text;
+    opacity: 0.3;
+}
+
+.disable-text {
+    color: $secondary-text;
+    opacity: 0.3;
+}
+
+.off-white-bg {
+    background-color: $off-white;
+}
+
+.white-bg {
+    background-color: $white;
+}
+
+.primary-bg {
+    background-color: $primary-text;
+}
+
+.secondary-bg {
+    background-color: $secondary-text;
+}
+.italic{
+    font-style: italic;
+}
+
+button {
+    font-weight: 700 !important;
+    letter-spacing: 1.4px;
+}
+
+code {
+    font-family: monospace !important;
+}
+
+pre {
+
+    margin: 0;
+
+    code {
+        background-color: $off-white;
+        border: 1px solid #999;
+        display: block;
+        padding: 16px;
+        margin: 0;
+        text-align: left;
+    }
+}
+
+.section-title {
+    margin-bottom: 50px;
+    text-align: left;
+    max-width: 600px;
+
+    h2 {
+        margin-bottom: 24px;
+    }
+
+    p {
+        color: $secondary-text;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.mat-elevation-z2 {
+    border-radius: 8px;
+}
+
+
+.card {
+    padding: 24px;
+    margin: 16px;
+}
+
+/*
+*
+*
+* Minimal design scss start
+*
+*
+*/
+
+
+/*
+*
+*
+* Minimal design scss End
+*
+*
+*/
+.pricing-description {
+    padding-top: 32px;
+
+    ul {
+        padding: 0;
+        margin: 0 0 32px 0;
+
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            padding: 12px 0;
+        }
+    }
+
+    .price {
+        color: #dcdcdc;
+
+        sub {
+            font-size: 24px;
+        }
+
+        span {
+            font-size: 40px;
+        }
+    }
+}
+
+.mat-button-toggle-checked .mat-button-toggle-focus-overlay {
+    border-bottom: 0 !important;
+}
+
+
+app-minimal-two {
+    .section-title {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+.faq-section {
+
+
+    .mat-expansion-indicator::after {
+        color: $primary-text;
+    }
+
+    .mat-expansion-panel-body {
+        p {
+            letter-spacing: 1px;
+            line-height: 24px;
+        }
+    }
+}

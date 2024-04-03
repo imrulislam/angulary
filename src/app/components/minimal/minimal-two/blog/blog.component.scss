@@ -1,0 +1,59 @@
+@import "../../../../../styles/variables.scss";
+
+:host {
+    .h-post-image {
+        max-height: 300px;
+        height: 300px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        border-bottom: 1px solid $border-color;
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    .h-post-description {
+        padding: 24px;
+        h2 {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        button{
+            margin-left: -16px;
+        }
+    }
+
+    .single-post {
+        margin-bottom: 8px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+
+    .post-description{
+        padding: 16px;
+        h4{
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        p{
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        button{
+            margin-left: -16px;
+            font-size: 12px;
+        }
+    }
+}

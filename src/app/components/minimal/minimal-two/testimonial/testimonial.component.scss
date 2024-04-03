@@ -1,0 +1,84 @@
+@import "../../../../../styles/variables.scss";
+
+
+:host {
+
+    .single-testimonial {
+        border: 1px solid $border-color;
+        padding: 24px;
+        background: $white;
+        position: relative;
+    }
+
+    .testimonial-image {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background: $off-white;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 24px;
+        border: 1px solid $border-color;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    .testimonial-icon {
+        margin-bottom: 0;
+        position: absolute;
+        bottom: -10px;
+        right: 0px;
+
+        span {
+            color: $secondary-text;
+            font-size: 70px;
+            color: #373737;
+            opacity: 0.1;
+            height: 70px;
+            width: 70px;
+            line-height: 70px;
+        }
+    }
+
+    .testimonial-description {
+        p {
+            color: $secondary-text;
+            line-height: 20px;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        h5 {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        p.designation {
+            font-size: 12px;
+            color: $secondary-text;
+            opacity: 0.5;
+        }
+    }
+
+    .testimonial-list {
+        ::ng-deep {
+            .owl-theme .owl-nav [class*=owl-] {
+                color: $primary-text;
+                font-size: 14px;
+                margin: 5px;
+                padding: 4px 7px;
+                background: $off-white;
+                display: inline-block;
+                cursor: pointer;
+                border-radius: 3px;
+            }
+        }
+    }
+}

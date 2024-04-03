@@ -1,0 +1,53 @@
+<section class="section-padding" id="About">
+    <div class="container">
+        <div class="section-title">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam repellat aliquid id! Illo corrupti laboriosam in quibusdam ut aspernatur inventore qui possimus?
+            </p>
+        </div>
+
+        <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="32px">
+            <div fxFlex="50%" class="about-us-expansion-panel">
+                <mat-accordion>
+                    <mat-expansion-panel expanded>
+                        <mat-expansion-panel-header (click)="changeAboutUsImage('1')">
+                            <mat-panel-title>
+                                Our purpose
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magni architecto ipsa eum
+                            ipsam sed ratione minima iure voluptatem repellendus omnis quae maxime error accusamus, quia
+                            laudantium ut, neque quos.S</p>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header (click)="changeAboutUsImage('2')">
+                            <mat-panel-title>
+                                Who we are?
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magni architecto ipsa eum
+                            ipsam sed ratione minima iure voluptatem repellendus omnis quae maxime error accusamus, quia
+                            laudantium ut, neque quos.S</p>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header (click)="changeAboutUsImage('3')">
+                            <mat-panel-title>
+                                What we do?
+                            </mat-panel-title>
+
+                        </mat-expansion-panel-header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nesciunt deserunt
+                            assumenda commodi dolores labore obcaecati quod voluptatibus repellat accusantium, delectus
+                            culpa possimus alias, cupiditate numquam. Quia unde tempore enim!</p>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </div>
+            <div fxFlex="50%">
+                <div class="about-us-image">
+                    <img id="myImg" src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

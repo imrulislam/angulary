@@ -1,0 +1,78 @@
+@import "../../../../../styles/variables.scss";
+
+:host {
+
+    .pricing-plan-area{
+        background-color: $off-white;
+    }
+    .single-pricing {
+        border: 1px solid $border-color;
+        padding: 24px;
+        background-color: $white;
+    }
+
+    .pricing-plan {
+        h1 {
+            margin-bottom: 24px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 20px;
+            color: $secondary-text;
+            margin-bottom: 24px;
+        }
+
+        mat-button-toggle {
+            min-width: 100px;
+        }
+
+        .mat-button-toggle-checked {
+            background-color: $primary-text;
+            color: $white;
+        }
+
+        .mat-button-toggle-checked .mat-button-toggle-focus-overlay {
+            border-bottom: none !important;
+        }
+    }
+
+    .pricing-icon {
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 16px;
+
+        span {
+            font-size: 55px;
+            color: $primary-text;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .pricing-heading {
+        position: relative;
+
+        h3 {
+            margin-bottom: 32px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: -32px;
+            left: 50%;
+            height: 1px;
+            background-color: $border-color;
+            width: 150px;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+:host{
+    .welcome-area {
+        height: 100vh;
+        background-image: url(../../../../../assets/images/minimal-light-welcome.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        align-items: center;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #222222;
+            opacity: 0.6;
+            z-index: -1;
+            display: block;
+            top: 0;
+            left: 0; 
+        }
+    }
+}

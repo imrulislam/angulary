@@ -1,0 +1,30 @@
+@import "../../../../../styles/variables.scss";
+
+.single-work {
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+}
+
+.work-icon {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    span{
+        font-size: 100px;
+        line-height: 100px;
+        color: $primary-text;
+    }
+}
+
+.work-description{
+    h4{
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+    p{
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+}

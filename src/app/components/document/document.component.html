@@ -1,0 +1,118 @@
+<section class="section-padding" fxLayoutAlign="center center">
+    <div class="container">
+        <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutAlign.t-sm="start center" class="mb-50">
+            <div fxFlex.gt-sm="70%" fxFlex="100%" fxFlexOrder.sm="2" fxFlexOrder.xs="2">
+                <h1 class="mb-8">App Documentation</h1>
+                <p class="mb-24">Welcome to <b class="primary-text">Angulary</b>. Get familiar with the app and explore
+                    the features of this App.</p>
+                <p class="italic"> <b>Note:</b> It's not a HTML and CSS App, It's an <a href="https://angular.io/"
+                        target="_blank">angular</a> App.</p>
+            </div>
+            <div fxFlex.gt-sm="30%" fxFlex="100%" ngClass.gt-sm="text-right" ngClass.sm="mb-16" ngClass.xs="mb-16"
+                fxFlexOrder.sm="1" fxFlexOrder.xs="1">
+                <button mat-stroked-button color="primary" routerLink="/demo">Back to Demos</button>
+            </div>
+        </div>
+
+        <div fxLayout.gt-sm="row wrap" fxLayout="column" fxLayoutGap="16px" class="mb-60" ngClass.gt-sm="mr-m-16">
+            <div class="single-app-description cursor-pointer p-16 mat-elevation-z2 mb-16" fxFlex.xs="0 0 calc(100%)"
+                fxFlex.sm="0 0 calc(100%)" fxFlex.gt-sm="0 0 calc(50%-16px)" fxLayoutAlign="start center"
+                (click)="onClickScroll('introduction')">
+                <div fxLayout="row" fxLayoutAlign="start center">
+                    <div class="mr-24 h-36">
+                        <span class="material-icons font-size-36 primary-text">list_alt</span>
+                    </div>
+                    <h4>Introduction</h4>
+                </div>
+            </div>
+            <div class="single-app-description cursor-pointer p-16 mat-elevation-z2 mb-16" fxFlex.xs="0 0 calc(100%)"
+                fxFlex.sm="0 0 calc(100%)" fxFlex.gt-sm="0 0 calc(50%-16px)" fxLayoutAlign="start center"
+                (click)="onClickScroll('installation')">
+                <div fxLayout="row" fxLayoutAlign="start center">
+                    <div class="mr-24 h-36">
+                        <span class="material-icons font-size-36 primary-text">list_alt</span>
+                    </div>
+
+                    <h4>Installation</h4>
+                </div>
+            </div>
+            <div class="single-app-description cursor-pointer p-16 mat-elevation-z2 mb-16" fxFlex.xs="0 0 calc(100%)"
+                fxFlex.sm="0 0 calc(100%)" fxFlex.gt-sm="0 0 calc(50%-16px)" fxLayoutAlign="start center"
+                (click)="onClickScroll('mixin-setup')">
+                <div fxLayout="row" fxLayoutAlign="start center">
+                    <div class="mr-24 h-36">
+                        <span class="material-icons font-size-36 primary-text">list_alt</span>
+                    </div>
+                    <h4>Mixin Files Config</h4>
+                </div>
+            </div>
+            <div class="single-app-description cursor-pointer p-16 mat-elevation-z2 mb-16" fxFlex.xs="0 0 calc(100%)"
+                fxFlex.sm="0 0 calc(100%)" fxFlex.gt-sm="0 0 calc(50%-16px)" fxLayoutAlign="start center"
+                (click)="onClickScroll('responsive-setup')">
+                <div fxLayout="row" fxLayoutAlign="start center">
+                    <div class="mr-24 h-36">
+                        <span class="material-icons font-size-36 primary-text">list_alt</span>
+                    </div>
+                    <h4>Responsive Config</h4>
+                </div>
+            </div>
+        </div>
+
+        <div id="introduction" class="mb-100">
+            <div class="mb-40">
+                <h2 class="mb-32 primary-text">Introduction</h2>
+                <p class="mb-24">This is not a traditional one page template, it's an <b>Angular</b> app wirtten with
+                    <b>Typescript</b> and <b>Angular Material</b>.</p>
+                <p>Here you can find a fully Responsive, easy to customize and list of custom made component It's a
+                    great
+                    source for learning <b>Angular</b> and <b>Angular Material</b> </p>
+            </div>
+
+            <div class="mb-40">
+                <h3 class="mb-32">Angular</h3>
+                <p><a href="">Angular</a> is the core of Angulary</p>
+            </div>
+            <div class="mb-40">
+                <h3 class="mb-32">Angular Material</h3>
+                <p>Angular material is our core ui design library. Powerfull flex layout design made this app fully
+                    mobile friendly design.
+                    Find more information about angular material design at : <a
+                        href="https://material.angular.io/">Angular Material.</a>
+                </p>
+            </div>
+            <div class="mb-40">
+                <h3 class="mb-32">Scss</h3>
+                <p>Here you can find Powerfull scss files and mixins you can find more info at : <a
+                        href="https://sass-lang.com/">SCSS.</a>
+                </p>
+            </div>
+        </div>
+
+        <div id="installation" class="mb-100">
+            <div class="mb-40">
+                <h2 class="mb-32 primary-text">Installation</h2>
+                <h3 class="mb-32">Prerequisites</h3>
+
+                <p>This section will give you some information about what tools you will need. Bellow part will describe
+                    all the prerequisites and how to install the app.</p>
+            </div>
+
+            <div>
+                <p class="mb-16">To install and use <b>Angulary</b> you will need to install  <b>Angular CLI</b>, <b>NodeJs</b>, <b>npm</b> package
+                    manager and <b>git</b> globaly in your computer.</p>
+
+                <p class="mb-16">Download and install <a href="https://nodejs.org/en/">NodeJs</a> form the website.</p>
+                <p class="mb-16">Download and install the latest <a href="https://git-scm.com/downloads">Git</a> from its website.
+                </p>
+
+                <p class="mb-16">Open (Terminal, Command Prompt etc.) and run:</p>
+                <pre>
+                    <code>
+npm install -g @angular/cli
+                    </code>
+                </pre>
+
+            </div>
+        </div>
+    </div>
+</section>

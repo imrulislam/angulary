@@ -1,0 +1,13 @@
+@import "../../../../../styles/variables.scss";
+
+:host{
+    .footer-area{
+        background-color: $secondary-text;
+        color: $white;
+    }
+    .copy-right-area{
+        background-color: $text-color;
+        color: $white;
+        padding: 16px;
+    }
+}

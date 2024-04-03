@@ -1,0 +1,33 @@
+@import "../../../../../styles/variables.scss";
+
+:host {
+
+    .about-us-expansion-panel {
+        ::ng-deep {
+            mat-expansion-panel-header {
+                border-bottom: 1px solid $border-color;
+                border-radius: 0 !important;
+            }
+
+            mat-panel-title {
+                font-size: 20px;
+                letter-spacing: 1px;
+                font-weight: 500;
+            }
+
+            .mat-expansion-panel-content {
+                .mat-expansion-panel-body {
+                    padding-top: 24px !important;
+                }
+            }
+        }
+
+    }
+
+    .about-us-image {
+        img {
+            max-height: 290px;
+        }
+    }
+
+}

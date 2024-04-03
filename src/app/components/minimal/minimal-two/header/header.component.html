@@ -1,0 +1,33 @@
+<!-- Main-menu section start -->
+<section class="main-menu-area" [ngClass]="{'main-menu-area-sticky' : isSticky}">
+    <div class="container main-menu-container" fxLayout.gt-sm="row" fxLayoutAlign.gt-sm="space-between center" fxLayoutGap.gt-sm="16px">
+        <!-- Logo area -->
+        <div class="logo" fxLayout="row" fxLayoutAlign="start center">
+            <img src="../../assets/images/angular_solidBlack.svg" alt="">
+            <h3 class="p-0 m-0">Angulary</h3>
+        </div>
+        <!-- Logo area -->
+
+        <!-- Main menu area -->
+        <div class="main-menu" fxHide.sm fxHide.xs>
+            <ul fxLayout="row" fxLayoutGap="16px">
+                <li><button mat-button (click)="onClickScroll('Ourwork')">Our Work</button></li>
+                <li><button mat-button (click)="onClickScroll('Features')">Features</button></li>
+                <li><button mat-button (click)="onClickScroll('Planning')">Planning</button></li>
+                <li><button mat-button (click)="onClickScroll('Pricing')">Pricing</button></li>
+                <li><button mat-button (click)="onClickScroll('Blog')">Blog</button></li>
+                <li><button mat-button routerLink="/demo">Demos</button></li>
+                <li><button mat-stroked-button color="primary">
+                    <mat-icon class="font-size-20 mr-8">login</mat-icon>Login
+                </button></li>
+            </ul>
+        </div>
+        <div class="mobile-menu" fxShow.sm fxHide.gt-sm>
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                <mat-icon>menu</mat-icon>
+              </button>
+        </div>
+        <!-- Main menu area -->
+    </div>
+</section>
+<!-- Main-menu section end -->

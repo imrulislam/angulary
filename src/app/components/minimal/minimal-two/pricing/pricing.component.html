@@ -1,0 +1,79 @@
+<!-- Pricing Section Start -->
+<section class="pricing-plan-area section-padding" id="Pricing">
+    <div class="container">
+        <div class="section-title pricing-plan">
+            <h2>Features</h2>
+            <p class="mb-16">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam repellat aliquid id! Illo corrupti laboriosam in quibusdam ut aspernatur inventore qui possimus?
+            </p>
+            <mat-button-toggle-group name="pricingPlan" aria-label="Pricing Plan" value="Monthly">
+                <mat-button-toggle (change)="onValChange($event.value)" value="Monthly">Monthly</mat-button-toggle>
+                <mat-button-toggle (change)="onValChange($event.value)" value="Yearly">Yearly</mat-button-toggle>
+            </mat-button-toggle-group>
+        </div>
+
+        <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutAlign.gt-sm="start start" fxLayoutGap="32px">
+            <div fxFlex.gt-sm="33%" fxFlex="100%">
+                <div class="single-pricing text-center mat-elevation-z2">
+                    <div class="pricing-heading">
+                        <h3>Pro Plan</h3>
+                    </div>
+                    <div class="pricing-description">
+                        <ul>
+                            <li>1gb Hosting</li>
+                            <li>5 Custom Domain</li>
+                            <li>SSD Hosting</li>
+                            <li>10gb Bandwith</li>
+                            <li>1 Year Free Support</li>
+                            <li class="price"><sub>$</sub><span>{{monthlyPrice}}</span></li>
+                        </ul>
+                    </div>
+                    <div class="pricing-btn">
+                        <button mat-flat-button color="primary">Try Now</button>
+                    </div>
+                </div>
+            </div>
+            <div fxFlex.gt-sm="33%" fxFlex="100%">
+                <div class="single-pricing text-center mat-elevation-z2">
+                    <div class="pricing-heading">
+                        <h3>Pro Plan</h3>
+                    </div>
+                    <div class="pricing-description">
+                        <ul>
+                            <li>1gb Hosting</li>
+                            <li>5 Custom Domain</li>
+                            <li>SSD Hosting</li>
+                            <li>10gb Bandwith</li>
+                            <li>1 Year Free Support</li>
+                            <li class="price"><sub>$</sub><span>{{monthlyPrice}}</span></li>
+                        </ul>
+                    </div>
+                    <div class="pricing-btn">
+                        <button mat-flat-button color="primary">Try Now</button>
+                    </div>
+                </div>
+            </div>
+            <div fxFlex.gt-sm="33%" fxFlex="100%">
+                <div class="single-pricing text-center mat-elevation-z2">
+                    <div class="pricing-heading">
+                        <h3>Enterprise Plan</h3>
+                    </div>
+                    <div class="pricing-description">
+                        <ul>
+                            <li>20gb Hosting</li>
+                            <li>20 Custom Domain</li>
+                            <li>SSD Hosting</li>
+                            <li>150gb Bandwith</li>
+                            <li>Free Support</li>
+                            <li class="price"><sub>$</sub><span>{{yearlyPrice}}</span></li>
+                        </ul>
+                    </div>
+                    <div class="pricing-btn">
+                        <button mat-flat-button color="primary">Try Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pricing Section Start -->

@@ -1,0 +1,7 @@
+{
+    "tslint.alwaysShowRuleFailuresAsWarnings": false,
+    "tslint.suppressWhileTypeErrorsPresent": true,
+    "tslint.jsEnable": true,
+    "tslint.exclude": null,
+    "javascript.suggestionActions.enabled": false
+}
